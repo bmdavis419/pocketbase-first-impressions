@@ -2,7 +2,7 @@ import PocketBase from "pocketbase";
 import { useState } from "react";
 
 // REPLACE WITH YOUR OWN URL THIS WILL BE DELETED
-const pb = new PocketBase("https://pocketbase-first-impressions.fly.dev");
+const pb = new PocketBase(import.meta.env.VITE_PB_URI as string);
 
 function LoggedIn({
   setLoggedIn,
